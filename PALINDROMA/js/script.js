@@ -22,3 +22,7 @@ if (userWord === wordRevert(userWord)) {
 } else {
     console.log(`la parola ${userWord} non è palindroma, perchè al contrario si legge ${wordRevert(userWord)}`);
 }
+
+//PARI E DISPARI
+
+userNum = parseInt(prompt("Pari o dispari ?"))
