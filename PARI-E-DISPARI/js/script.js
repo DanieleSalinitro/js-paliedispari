@@ -7,6 +7,7 @@ function getRndInteger(min, max) {
 let userChoice = prompt("Pari o dispari ?");
 let userNum = parseInt(prompt("inserisci un numero"))
 let botNum = getRndInteger(1,5);
+console.log(botNum);
 
 function isEven(number){
   valnum = false;
@@ -18,6 +19,8 @@ function isEven(number){
 
 sumNum= userNum + botNum;
 
-if ( isEven(sumNum) && (userChoice === "pari") ) or (isEven){
+if (( isEven(sumNum) === true && userChoice === "pari" ) || ( isEven(sumNum) === false && userChoice === "dispari")) {
   console.log("congratulazioni utente, hai vinto ");
+} else{
+  console.log("il computer ha vinto !");
 }
